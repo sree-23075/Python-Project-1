@@ -2,6 +2,21 @@ from account.user import User
 from account.bank_account import BankAccount, SavingsAccount, CurrentAccount, StudentAccount
 
 users = []
+from rich.console import Console
+
+console = Console()
+
+def create_account():
+    # Step 1: Access the users list
+    global users  # if users is a global list
+
+    # Step 2: Check if users exist
+    if not users:
+        console.print("[bold red]No users available. Please create a user first.[/bold red]")
+        return  # Stop here, do NOT continue
+    # Continue with selecting a user
+    # Then creating an account linked to that user
+    ...
 
 def create_user():
     name = input("Enter name: ")

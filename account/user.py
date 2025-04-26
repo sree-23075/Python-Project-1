@@ -4,7 +4,7 @@ class User:
         self.email = email
         self.accounts = []
 
-    def add_account(self, account):
+    def  add_account(self, account):
         self.accounts.append(account)
 
     def get_total_balance(self): 
